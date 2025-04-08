@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>JS Essentials</title>
+</head>
+<body>
+    <div class="img-background">
+    <header style="max-height: 10%;">
+        <div class="logo">
+            <img src="https://e7.pngegg.com/pngimages/121/657/png-clipart-travel-itinerary-logo-travel-leaf-logo-thumbnail.png" alt="Logo" />
+          </div>
+        <div class="topnav">
+            <nav class="topnav-right">
+                <a href="travel_recommendation.html">Home</a>
+                <a href="about_us.html">About Us</a>
+                <a href="contact_us.html">Contact Us</a>
+            </nav>
+        </div>
+    </header>
+    <main class="main-content" style="display: flex; flex-direction: row; justify-content:space-between; height: 60%;">
+        <div class="welcome-container">
+            <h2>Your search travel recommendations</h1>
+            <p>Find the best beaches, temples, and countries to explore. Search, compare, and plan your dream trip with ease.</p>
+            <button  type="button"class="book-now">Book Now</button>
+           
+        </div>
+        <div class="search-container">
+        <div class="search-action">
+            <input type="search" placeholder="Search.." id="search">
+            <button id="submit-search" type="button" onClick="getTravelRecommendations()">Search</button>
+            <button type="button" name="btn-clear" onClick="clearTravelRecommendations()">Clear Result</button>
+        </div>
+        <div id="items"></div>
+
+    </main>
+    <footer>
+        <p>&copy; 2023 JS Essentials</p>
+    </footer>
+</div>
+</body>
+<script src="travel_recommendation.js"></script>
+</html>
